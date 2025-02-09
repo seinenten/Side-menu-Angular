@@ -1,0 +1,14 @@
+{
+  "name": "jfl-side-menu",
+  "keywords": [ "side-menu", "angular" ] ,
+  "author": "Jorge Assad" ,
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^19.1.0",
+    "@angular/core": "^19.1.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

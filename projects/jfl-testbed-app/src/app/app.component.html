@@ -1,0 +1,7 @@
+<p class="text-3xl font-bold underline">hola mundo</p>
+<lib-jfl-side-menu
+  [isAuthenticated]="isAuthenticated()"
+  [titleColor]="TitleColor.purple"
+  (signIn)="isAuthenticated.set(true)"
+  (signOut)="isAuthenticated.set(false)"
+  />
