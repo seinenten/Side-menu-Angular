@@ -21,6 +21,9 @@ export class JflSideMenuComponent {
 
   titleColor = input<TitleColor>(TitleColor.purple);
 
+  title = input('JFL');
+  subTitle = input('Core');
+
   signOut = output();
   signIn = output();
 
