@@ -27,7 +27,7 @@ describe('JflSideMenuComponent', () => {
 
   it('shoud call onSign when logout button is clicked', () => {
 
-    spyOn(component.onSignIn, 'emit');
+    spyOn(component.signIn, 'emit');
     fixture.componentRef.setInput('isAuthenticated', false);
 
     fixture.detectChanges();
@@ -38,12 +38,12 @@ describe('JflSideMenuComponent', () => {
 
     button.click();
 
-    expect(component.onSignIn.emit).toHaveBeenCalled();
+    expect(component.signIn.emit).toHaveBeenCalled();
   });
 
   it('shoud call onSignOut when logout button is clicked', () => {
 
-    spyOn(component.onSignOut, 'emit');
+    spyOn(component.signOut, 'emit');
     fixture.componentRef.setInput('isAuthenticated', true);
 
     fixture.detectChanges();
@@ -54,7 +54,7 @@ describe('JflSideMenuComponent', () => {
 
     button.click();
 
-    expect(component.onSignOut.emit).toHaveBeenCalled();
+    expect(component.signOut.emit).toHaveBeenCalled();
 
 
   });
